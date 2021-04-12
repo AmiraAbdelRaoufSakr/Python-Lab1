@@ -1,0 +1,82 @@
+##enumerated()
+The enumerate() function assigns an index to each item in an iterable object that can be used to reference the item later.
+
+What does enumerate do in Python?
+ It makes it easier to keep track of the content of an iterable object.
+
+If you are using enumerate in Python 3 and call print(enumerate()), you will get an alphanumeric memory reference address instead of
+a readable list.enumerate() in Python 3 works this way to save memory by not generating unnecessary full-fledged lists.
+
+Example:
+-------
+enumerate(iterable, start=0)
+
+In the example above, iterable is an iterable type object like a list, tuple, or string.
+start is an optional parameter that tells the function which index to use for the first item of the iterable.
+If you don’t provide a start parameter, enumerate() will use a start value of 0 by default.
+
+cars = ['kia', 'audi', 'bmw']
+for car in enumerate(cars):
+  print(car)
+
+Output:
+------
+(0, 'kia')
+(1, 'audi')
+(2, 'bmw')
+
+Example2:
+----------
+The enumerate() function in Python is commonly used instead of the for loop. That’s because enumerate() can iterate over the index of an item, as well as the item itself.
+Using enumerate() also makes the code cleaner, since you have to write fewer lines. For example, recall the code snippet we previously used:
+
+cars = ['kia', 'audi', 'bmw']
+print(list(enumerate(cars, start = 1)))
+
+Output:
+------
+[(1, 'kia'), (2, 'audi'), (3, 'bmw')]
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+##Lamda
+You can write your very own Python functions using the def keyword, function headers, docstrings, and function bodies.
+However, there's a quicker way to write functions on the fly, and these are called lambda functions because you use the keyword lambda.
+
+Some function definitions are simple enough that they can be converted to a lambda function. By doing this,
+you write fewer lines of code, which is pretty awesome and will come in handy, especially when you're writing and maintaining big programs.
+
+Example:
+--------
+Here we rewrite our function raise_to_power as a lambda function. After the keyword lambda, we specify the names of the arguments; 
+then, we use a colon followed by the expression that specifies what we wish the function to return.
+
+raise_to_power = lambda x, y: x ** y
+
+#calling lamda function
+raise_to_power(2, 3)
+#output
+8
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+##operator module
+
+operator.lt(a, b)
+operator.le(a, b)
+operator.eq(a, b)
+operator.ne(a, b)
+operator.ge(a, b)
+operator.gt(a, b)
+operator.__lt__(a, b)
+operator.__le__(a, b)
+operator.__eq__(a, b)
+operator.__ne__(a, b)
+operator.__ge__(a, b)
+operator.__gt__(a, b)
+operator.not_(obj)
+operator.__not__(obj)
+operator.index(a)
+operator.__index__(a)
+Return a converted to an integer. Equivalent to a.__index__().
+operator.lshift(a, b)
+operator.__lshift__(a, b)
+Return a shifted left by b.

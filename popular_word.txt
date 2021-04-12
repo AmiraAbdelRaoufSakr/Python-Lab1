@@ -1,0 +1,1 @@
+[('the', 6), ('lorem', 5), ('ipsum', 4), ('of', 4), ('and', 3), ('it', 3), ('is', 2), ('\n', 2), ('dummy', 2), ('text', 2), ('has', 2), ('a', 2), ('type', 2), ('with', 2), ('what', 1), ('ipsum\n', 1), ('simply', 1), ('printing', 1), ('typesetting', 1), ('industry\n', 1)]
